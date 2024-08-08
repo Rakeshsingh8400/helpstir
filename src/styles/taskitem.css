@@ -1,0 +1,73 @@
+/* TaskItem.css */
+
+/* TaskItem container styling */
+.task-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .task-item.completed {
+    background-color: #f9f9f9;
+    border-left: 4px solid #28a745;
+  }
+  
+  /* Title styling */
+  .task-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Description styling */
+  .task-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Timestamp styling */
+  .task-item small {
+    font-size: 0.875rem;
+    color: #888;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  /* Button styling */
+  .task-item button {
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Complete button styling */
+  .task-item button:first-of-type {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .task-item button:first-of-type:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Edit button styling */
+  .task-item button:last-of-type {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .task-item button:last-of-type:hover {
+    background-color: #218838;
+  }
+  
